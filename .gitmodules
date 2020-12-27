@@ -1,0 +1,4 @@
+[submodule "themes/baanstudio-theme"]
+	path = themes/baanstudio-theme
+	url = https://github.com/mozo-works/baanstudio-theme.git
+	branch = main
