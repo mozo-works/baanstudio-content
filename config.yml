@@ -1,0 +1,26 @@
+title: 반 스튜디오
+description: 스튜디오 그래픽 디자이너 김성렬이 운영하는 스튜디오이다.
+
+languageLang: ko
+languageCode: ko-kr
+defaultContentLanguage: ko
+hasCJKLanguage: true
+languages:
+  ko:
+    title: 반 스튜디오
+    weight: 1
+  en:
+    title: baan studio
+    description: graphic design studio by seongyeol, Kim.
+    weight: 2
+
+theme: baanstudio-theme
+
+outputs:
+  home:
+    - HTML
+    - JSON
+    - RSS
+
+build:
+  writeStats: true
