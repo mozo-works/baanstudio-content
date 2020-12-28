@@ -1,0 +1,43 @@
+backend:
+  name: git-gateway
+  branch: main
+  use_large_media_transforms_in_media_library: false
+
+local_backend: true
+media_folder: "static/media"
+public_folder: "/media"
+
+i18n:
+  # Required and can be one of multiple_folders, multiple_files or single_file
+  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
+  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
+  # single_file - persists a single file in `<folder>/<slug>.<extension>`
+  structure: multiple_files
+  locales: [ko, en]
+  default_locale: ko
+
+collections:
+  - name: "projects"
+    label: "프로젝트"
+    i18n: true
+    folder: "content/projects"
+    media_folder: ''
+    public_folder: ''
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Title",
+        name: "title",
+        widget: "string"
+      - label: "Publish Date"
+        name: "date",
+        widget: "datetime"
+      - label: "Year"
+        name: "year"
+        widget: "number"
+      - label: "Month"
+        name: "month"
+        widget: "number"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
